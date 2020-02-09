@@ -56,8 +56,6 @@ export default class Workers extends Component {
     getWorkdays = async () => {
         const { workdays, error } = await workdaysService.getWorkerdays();
 
-        console.log(workdays)
-
         if (error) {
             this.setState({ error });
         } else {
